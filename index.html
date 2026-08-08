@@ -1,102 +1,811 @@
 <!DOCTYPE html>
-<html lang="en">
+<!--[if IE 7]>
+<html id="ie7" lang="en-US">
+<![endif]-->
+<!--[if IE 8]>
+<html id="ie8" lang="en-US">
+<![endif]-->
+<!--[if !(IE 7) | !(IE 8) ]><!-->
+<html lang="en-US">
+<!--<![endif]-->
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Your Name — Portfolio</title>
-<meta name="description" content="Your Name. Designer & developer.">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,300;9..144,500;9..144,600&family=Inter:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="style.css">
-</head>
-<body>
+<meta name="robots" content="index,follow">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>MovieRulz | Indian Movies - Telugu, Tamil, Malayalam, Hindi</title>
+<meta name="description" content="MovieRulz: Director, cast, synopsis and media updates for Telugu, Tamil, Malayalam and Hindi movies. Updated daily.">
+<meta property="og:type" content="website">
+<meta property="og:title" content="MovieRulz | Indian Movies - Telugu, Tamil, Malayalam, Hindi">
+<meta property="og:description" content="MovieRulz: Director, cast, synopsis and media updates for Telugu, Tamil, Malayalam and Hindi movies. Updated daily.">
+<meta property="og:url" content="./">
+<meta property="og:site_name" content="MovieRulz">
+<meta property="og:image" content="./uploads/logo.png">
+<meta property="og:image:type" content="image/png">
+<link rel="icon" href="./favicon.ico">
+<style type="text/css">
+img.wp-smiley,
+img.emoji {
+	display: inline !important;
+	border: none !important;
+	box-shadow: none !important;
+	height: 1em !important;
+	width: 1em !important;
+	margin: 0 .07em !important;
+	vertical-align: -0.1em !important;
+	background: none !important;
+	padding: 0 !important;
+}
+</style>
+<link rel='stylesheet' id='parament-css'  href='./style.css?ver=3' type='text/css' media='all'>
+<link rel="canonical" href="./">
+<link rel='shortlink' href="./">
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-C39ZDT10PZ"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
 
-<div class="status-bar" id="status-bar">
-  <span class="status-dot" aria-hidden="true"></span>
-  <span class="status-text">currently: <span id="status-msg">building something new</span></span>
-  <span class="cursor" aria-hidden="true"></span>
+  gtag('config', 'G-C39ZDT10PZ');
+</script>
+</head>
+
+<body class="home page-template page-template-page-homepage page-template-page-homepage-php page">
+<div id="page-wrap" class="contain">
+
+<!-- start #menu -->
+<header id="branding" role="banner">
+<h1 id="site-title"><a href="/">MovieRulz</a></h1>
+<h2 id="site-description">Latest Indian Movies — Telugu, Tamil, Malayalam & Hindi</h2></header><!-- #branding -->
+<div id="search">
+
+<form role="search" method="get" id="searchform" class="searchform" action="./search_movies">
+		        <div>
+			<label class="screen-reader-text" for="s">Search for:</label>
+		        <input style="width:250px;height:20px" type="text" name="s" id="search_term" placeholder="Search..." autocomplete="off" required>
+					<input onmouseover="JavaScript:this.style.cursor='pointer' " type="submit" id="searchsubmit" value="Search" />
+		        </div>
+		    </form>		    
+</div>
+					<div style="margin-top:-20px;" class="autocomplete-result"></div>
+<nav id="menu" role="navigation">
+<ul id="primary-menu" class="menu">
+<li><a title="MovieRulz Home" href="./">Home</a></li>
+
+<li><a title="All Featured Movies" href="./movies?sort=featured">Featured</a>
+<ul class="sub-menu">
+	<li><a title="Hollywood Featured" href="./category/hollywood-featured">Hollywood Featured</a></li>
+	<li><a title="Bollywood Featured" href="./category/bollywood-featured">Bollywood Featured</a></li>
+	<li><a title="Telugu Featured" href="./category/telugu-featured">Telugu Featured</a></li>
+	<li><a title="Tamil Featured" href="./category/tamil-featured">Tamil Featured</a></li>
+	<li><a title="Malayalam Featured" href="./category/malayalam-featured">Malayalam Featured</a></li>
+</ul>
+</li>
+
+<li><a title="Bollywood Featured Movies" href="./category/bollywood-featured">Bollywood</a>
+<ul class="sub-menu">
+    <li><a title="Bollywood Movie 2026" href="./category/bollywood-movies-2026">Bollywood Movie 2026</a></li>
+    <li><a title="Bollywood Movie 2025" href="./category/bollywood-movies-2025">Bollywood Movie 2025</a></li>
+    <li><a title="Bollywood Movie 2024" href="./category/bollywood-movies-2024">Bollywood Movie 2024</a></li>
+    <li><a title="Bollywood Movie 2023" href="./category/bollywood-movies-2023">Bollywood Movie 2023</a></li>
+    <li><a title="Bollywood Movie 2022" href="./category/bollywood-movies-2022">Bollywood Movie 2022</a></li>
+    <li><a title="Bollywood Movie 2021" href="./category/bollywood-movies-2021">Bollywood Movie 2021</a></li>
+	<li><a title="Bollywood Movie 2020" href="./category/bollywood-movies-2020">Bollywood Movie 2020</a></li>
+	<li><a title="Bollywood Movie 2019" href="./category/bollywood-movies-2019">Bollywood Movie 2019</a></li>
+	<li><a title="Bollywood Movie 2018" href="./category/bollywood-movies-2018">Bollywood Movie 2018</a></li>
+	<li><a title="Bollywood Movie 2017" href="./category/bollywood-movies-2017">Bollywood Movie 2017</a></li>
+	<li><a title="Bollywood Movie 2016" href="./category/bollywood-movies-2016">Bollywood Movie 2016</a></li>
+	<li><a title="Bollywood Movie 2015" href="./category/bollywood-movies-2015">Bollywood Movie 2015</a></li>
+</ul>
+</li>
+
+<li><a title="Telugu Featured Movies" href="./category/telugu-featured/">Telugu</a>
+<ul class="sub-menu">
+    <li><a title="Telugu Movies 2026" href="./category/telugu-movies-2026">Telugu Movies 2026</a></li>
+    <li><a title="Telugu Movies 2025" href="./category/telugu-movies-2025">Telugu Movies 2025</a></li>
+    <li><a title="Telugu Movies 2024" href="./category/telugu-movies-2024">Telugu Movies 2024</a></li>
+    <li><a title="Telugu Movies 2023" href="./category/telugu-movies-2023">Telugu Movies 2023</a></li>
+    <li><a title="Telugu Movies 2022" href="./category/telugu-movies-2022">Telugu Movies 2022</a></li>
+    <li><a title="Telugu Movies 2021" href="./category/telugu-movies-2021">Telugu Movies 2021</a></li>
+	<li><a title="Telugu Movies 2020" href="./category/telugu-movies-2020">Telugu Movies 2020</a></li>
+	<li><a title="Telugu Movies 2019" href="./category/telugu-movies-2019">Telugu Movies 2019</a></li>
+	<li><a title="Telugu Movies 2018" href="./category/telugu-movies-2018">Telugu Movies 2018</a></li>
+	<li><a title="Telugu Movies 2017" href="./category/telugu-movies-2017">Telugu Movies 2017</a></li>
+	<li><a title="Telugu Movies 2016" href="./category/telugu-movies-2016">Telugu Movies 2016</a></li>
+	<li><a title="Telugu Movies 2015" href="./category/telugu-movies-2015">Telugu Movies 2015</a></li>
+</ul>
+</li>
+
+<li><a title="Tamil Featured Movies" href="./category/tamil-featured">Tamil</a>
+<ul class="sub-menu">
+    <li><a title="Tamil Movies 2026" href="./category/tamil-movies-2026">Tamil Movies 2026</a></li>
+    <li><a title="Tamil Movies 2025" href="./category/tamil-movies-2025">Tamil Movies 2025</a></li>
+    <li><a title="Tamil Movies 2024" href="./category/tamil-movies-2024">Tamil Movies 2024</a></li>
+    <li><a title="Tamil Movies 2023" href="./category/tamil-movies-2023">Tamil Movies 2023</a></li>
+    <li><a title="Tamil Movies 2022" href="./category/tamil-movies-2022">Tamil Movies 2022</a></li>
+    <li><a title="Tamil Movies 2021" href="./category/tamil-movies-2021">Tamil Movies 2021</a></li>
+	<li><a title="Tamil Movies 2020" href="./category/tamil-movies-2020">Tamil Movies 2020</a></li>
+	<li><a title="Tamil Movies 2019" href="./category/tamil-movies-2019">Tamil Movies 2019</a></li>
+	<li><a title="Tamil Movies 2018" href="./category/tamil-movies-2018">Tamil Movies 2018</a></li>
+	<li><a title="Tamil Movies 2017" href="./category/tamil-movies-2017">Tamil Movies 2017</a></li>
+	<li><a title="Tamil Movies 2016" href="./category/tamil-movies-2016">Tamil Movies 2016</a></li>
+	<li><a title="Tamil Movies 2015" href="./category/tamil-movies-2015">Tamil Movies 2015</a></li>
+</ul>
+</li>
+
+<li><a title="Malayalam Movies" href="./category/malayalam-featured">Malayalam</a>
+<ul class="sub-menu">
+    <li><a title="Malayalam Movies 2026" href="./category/malayalam-movies-2026">Malayalam Movies 2026</a></li>
+    <li><a title="Malayalam Movies 2025" href="./category/malayalam-movies-2025">Malayalam Movies 2025</a></li>
+    <li><a title="Malayalam Movies 2024" href="./category/malayalam-movies-2024">Malayalam Movies 2024</a></li>
+    <li><a title="Malayalam Movies 2023" href="./category/malayalam-movies-2023">Malayalam Movies 2023</a></li>
+    <li><a title="Malayalam Movies 2022" href="./category/malayalam-movies-2022">Malayalam Movies 2022</a></li>
+    <li><a title="Malayalam Movies 2021" href="./category/malayalam-movies-2021">Malayalam Movies 2021</a></li>
+	<li><a title="Malayalam Movies 2020" href="./category/malayalam-movies-2020">Malayalam Movies 2020</a></li>
+	<li><a title="Malayalam Movies 2019" href="./category/malayalam-movies-2019">Malayalam Movies 2019</a></li>
+	<li><a title="Malayalam Movies 2018" href="./category/malayalam-movies-2018">Malayalam Movies 2018</a></li>
+	<li><a title="Malayalam Movies 2017" href="./category/malayalam-movies-2017">Malayalam Movies 2017</a></li>
+	<li><a title="Malayalam Movies 2016" href="./category/malayalam-movies-2016">Malayalam Movies 2016</a></li>
+	<li><a title="Malayalam Movies 2015" href="./category/malayalam-movies-2015">Malayalam Movies 2015</a></li>
+</ul>
+</li>
+
+<li><a title="Hollywood Featured Movies" href="./category/hollywood-featured">Hollywood</a>
+<ul class="sub-menu">
+    <li><a title="Hollywood Movie 2026" href="./category/hollywood-movies-2026">Hollywood Movie 2026</a></li>
+    <li><a title="Hollywood Movie 2025" href="./category/hollywood-movies-2025">Hollywood Movie 2025</a></li>
+    <li><a title="Hollywood Movie 2024" href="./category/hollywood-movies-2024">Hollywood Movie 2024</a></li>
+    <li><a title="Hollywood Movie 2023" href="./category/hollywood-movies-2023">Hollywood Movie 2023</a></li>
+    <li><a title="Hollywood Movie 2022" href="./category/hollywood-movies-2022">Hollywood Movie 2022</a></li>
+    <li><a title="Hollywood Movie 2021" href="./category/hollywood-movies-2021">Hollywood Movie 2021</a></li>
+	<li><a title="Hollywood Movie 2020" href="./category/hollywood-movies-2020">Hollywood Movie 2020</a></li>
+	<li><a title="Hollywood Movie 2019" href="./category/hollywood-movies-2019">Hollywood Movie 2019</a></li>
+	<li><a title="Hollywood Movie 2018" href="./category/hollywood-movies-2018">Hollywood Movie 2018</a></li>
+	<li><a title="Hollywood Movie 2017" href="./category/hollywood-movies-2017">Hollywood Movie 2017</a></li>
+	<li><a title="Hollywood Movie 2016" href="./category/hollywood-movies-2016">Hollywood Movie 2016</a></li>
+	<li><a title="Hollywood Movie 2015" href="./category/hollywood-movies-2015">Hollywood Movie 2015</a></li>
+</ul>
+</li>
+
+<li><a title="Dubbed Movies" href="./#">Dubbed</a>
+<ul class="sub-menu">
+	<li><a title="Hindi Dubbed Movies" href="./language/hindi-dubbed">Hindi Dubbed Movies</a></li> 
+	<li><a title="Tamil Dubbed Movies" href="./language/tamil-dubbed">Tamil Dubbed Movies</a></li> 
+	<li><a title="Telugu Dubbed Movies" href="./language/telugu-dubbed">Telugu Dubbed Movies</a></li> 
+</ul>
+</li>
+
+<li><a title="Others Movies" href="./#">Others</a>
+<ul class="sub-menu">
+	<li><a title="Bengali Movies" href="./language/bengali">Bengali Movies</a></li> 
+	<li><a title="Punjabi Movies" href="./language/punjabi">Punjabi Movies</a></li> 
+</ul>
+</li>
+
+<li><a title="Movies by Quality" href="./#">Quality</a>
+<ul class="sub-menu">
+	<li><a title="DVDScr Movies" href="./quality/dvdscr">DVDScr New Movies</a></li>
+	<li><a title="DVDRip Movies" href="./quality/dvdrip">DVDRip Movies</a></li>
+	<li><a title="DVDRip Movies" href="./quality/hdrip">HDRip Movies</a></li>
+	<li><a title="DVDRip Movies" href="./quality/brrip">BRRip Movies</a></li>
+</ul>
+</li>
+
+</ul></nav>
+
+    <div style="clear: both; display: block; height: 12px; width: 100%;"></div>
+
+    <div class="directory-intro">
+        <h2>MovieRulz — Director, Cast & Synopsis for Indian Movies</h2>
+        <p>
+            MovieRulz provides director details, cast information, movie synopses and media updates for the latest Telugu, Tamil, Malayalam and Hindi films. Explore our growing database of Indian cinema.
+        </p>
+        <div class="format-tags">
+            <span>Latest Telugu Movies</span>
+            <span>Latest Tamil Movies</span>
+            <span>Latest Malayalam Movies</span>
+            <span>Latest Hindi Movies</span>
+        </div>
+    </div>
+
+<!-- end #menu -->
+
+
+
+
+<div id="content" class="clearfix row-fluid">
+    <div id="main" class="span12 clearfix" role="main">
+		<div id="list" class="films" style="padding-bottom:5px">
+	<div class="featured">
+		<h2 class="line_table">Featured Movies Free</h2>
+		<div class="content home_style">
+			<div class="clear"></div>
+			<ul>
+				<li>
+					<div class="boxed film">
+						<div class="cont_display">
+							<a title="Lenin (2026) HDRip [Telugu]" href="./lenin-2026-hdrip-telugu-7293.html">
+								<img width="165" height="220" src="./uploads/Lenin-Telugu.jpg" class="attachment-post-thumbnail size-post-thumbnail wp-post-image" alt="Lenin"></a>
+						</div>
+						<p><b>Lenin (2026) HDRip [Telugu]</b></p>
+					</div>
+				
+				</li>
+				<li>
+					<div class="boxed film">
+						<div class="cont_display">
+							<a title="Hrudhayam Murali (2026) HDRip [Telugu]" href="./hrudhayam-murali-2026-hdrip-telugu-7296.html">
+								<img width="165" height="220" src="./uploads/Hrudhayam-Murali-Telugu-1.jpg" class="attachment-post-thumbnail size-post-thumbnail wp-post-image" alt="Hrudhayam Murali"></a>
+						</div>
+						<p><b>Hrudhayam Murali (2026) HDRip [Telugu]</b></p>
+					</div>
+				
+				</li>
+				<li>
+					<div class="boxed film">
+						<div class="cont_display">
+							<a title="Chennai Love Story (2026) DVDScr [Telugu]" href="./chennai-love-story-2026-dvdscr-telugu-7249.html">
+								<img width="165" height="220" src="./uploads/Chennai-Love-Story-Telugu.jpg" class="attachment-post-thumbnail size-post-thumbnail wp-post-image" alt="Chennai Love Story"></a>
+						</div>
+						<p><b>Chennai Love Story (2026) DVDScr [Telugu]</b></p>
+					</div>
+				
+				</li>
+				<li>
+					<div class="boxed film">
+						<div class="cont_display">
+							<a title="Vanda Devullu (2026) HDRip [Telugu]" href="./vanda-devullu-2026-hdrip-telugu-7307.html">
+								<img width="165" height="220" src="./uploads/Vanda-Devullu-Telugu.jpg" class="attachment-post-thumbnail size-post-thumbnail wp-post-image" alt="Vanda Devullu"></a>
+						</div>
+						<p><b>Vanda Devullu (2026) HDRip [Telugu]</b></p>
+					</div>
+				
+				</li>
+				<li>
+					<div class="boxed film">
+						<div class="cont_display">
+							<a title="Oh Sukumari (2026) HDRip [Telugu]" href="./oh-sukumari-2026-hdrip-telugu-7295.html">
+								<img width="165" height="220" src="./uploads/Oh-Sukumari-Telugu.jpg" class="attachment-post-thumbnail size-post-thumbnail wp-post-image" alt="Oh Sukumari"></a>
+						</div>
+						<p><b>Oh Sukumari (2026) HDRip [Telugu]</b></p>
+					</div>
+				
+				</li>
+				<li>
+					<div class="boxed film">
+						<div class="cont_display">
+							<a title="M.R.P – Neekentha Naakentha (2026) HDRip [Telugu]" href="./mrp-neekentha-naakentha-2026-hdrip-telugu-7304.html">
+								<img width="165" height="220" src="./uploads/M.R.P-Neekentha-Naakentha-Telugu.jpg" class="attachment-post-thumbnail size-post-thumbnail wp-post-image" alt="M.R.P – Neekentha Naakentha"></a>
+						</div>
+						<p><b>M.R.P – Neekentha Naakentha (2026) HDRip [Telugu]</b></p>
+					</div>
+				
+				</li>
+				<li>
+					<div class="boxed film">
+						<div class="cont_display">
+							<a title="Srinivasa Mangapuram (2026) DVDScr [Telugu]" href="./srinivasa-mangapuram-2026-dvdscr-telugu-7273.html">
+								<img width="165" height="220" src="./uploads/Srinivasa-Mangapuram-Telugu.jpg" class="attachment-post-thumbnail size-post-thumbnail wp-post-image" alt="Srinivasa Mangapuram"></a>
+						</div>
+						<p><b>Srinivasa Mangapuram (2026) DVDScr [Telugu]</b></p>
+					</div>
+				
+				</li>
+				<li>
+					<div class="boxed film">
+						<div class="cont_display">
+							<a title="Uyir (2026) HDRip [Telugu]" href="./uyir-2026-hdrip-telugu-7279.html">
+								<img width="165" height="220" src="./uploads/Uyir-Telugu.jpg" class="attachment-post-thumbnail size-post-thumbnail wp-post-image" alt="Uyir"></a>
+						</div>
+						<p><b>Uyir (2026) HDRip [Telugu]</b></p>
+					</div>
+				
+				</li>
+				<li>
+					<div class="boxed film">
+						<div class="cont_display">
+							<a title="Operation Safed Sagar Season 1 (2026) HDRip [Telugu]" href="./operation-safed-sagar-season-1-2026-hdrip-telugu-7309.html">
+								<img width="165" height="220" src="./uploads/Operation-Safed-Sagar-Season-1-Telugu.jpg" class="attachment-post-thumbnail size-post-thumbnail wp-post-image" alt="Operation Safed Sagar Season 1"></a>
+						</div>
+						<p><b>Operation Safed Sagar Season 1 (2026) HDRip [Telugu]</b></p>
+					</div>
+				
+				</li>
+				<li>
+					<div class="boxed film">
+						<div class="cont_display">
+							<a title="Second Case Of Seetharam (2026) HDRip [Telugu]" href="./second-case-of-seetharam-2026-hdrip-telugu-7288.html">
+								<img width="165" height="220" src="./uploads/Second-Case-Of-Seetharam-Telugu.jpg" class="attachment-post-thumbnail size-post-thumbnail wp-post-image" alt="Second Case Of Seetharam"></a>
+						</div>
+						<p><b>Second Case Of Seetharam (2026) HDRip [Telugu]</b></p>
+					</div>
+				
+				</li>
+				<li>
+					<div class="boxed film">
+						<div class="cont_display">
+							<a title="Jana Nayakudu (2026) HDRip [Telugu]" href="./jana-nayakudu-2026-hdrip-telugu-7240.html">
+								<img width="165" height="220" src="./uploads/Jana-Nayakudu-Telugu.jpg" class="attachment-post-thumbnail size-post-thumbnail wp-post-image" alt="Jana Nayakudu"></a>
+						</div>
+						<p><b>Jana Nayakudu (2026) HDRip [Telugu]</b></p>
+					</div>
+				
+				</li>
+				<li>
+					<div class="boxed film">
+						<div class="cont_display">
+							<a title="Vadhandhi Season 2 (2026) HDRip [Telugu]" href="./vadhandhi-season-2-2026-hdrip-telugu-7300.html">
+								<img width="165" height="220" src="./uploads/Vadhandhi-Season-2-Telugu.jpg" class="attachment-post-thumbnail size-post-thumbnail wp-post-image" alt="Vadhandhi Season 2"></a>
+						</div>
+						<p><b>Vadhandhi Season 2 (2026) HDRip [Telugu]</b></p>
+					</div>
+				
+				</li>
+				<li>
+					<div class="boxed film">
+						<div class="cont_display">
+							<a title="Rao Bahadur (2026) HDRip [Telugu]" href="./rao-bahadur-2026-hdrip-telugu-7259.html">
+								<img width="165" height="220" src="./uploads/Rao-Bahadur-Telugu-1.jpg" class="attachment-post-thumbnail size-post-thumbnail wp-post-image" alt="Rao Bahadur"></a>
+						</div>
+						<p><b>Rao Bahadur (2026) HDRip [Telugu]</b></p>
+					</div>
+				
+				</li>
+				<li>
+					<div class="boxed film">
+						<div class="cont_display">
+							<a title="Gatta Kusthi 2 (2026) HDRip [Telugu]" href="./gatta-kusthi-2-2026-hdrip-telugu-7261.html">
+								<img width="165" height="220" src="./uploads/Gatta-Kusthi-2-Telugu.jpg" class="attachment-post-thumbnail size-post-thumbnail wp-post-image" alt="Gatta Kusthi 2"></a>
+						</div>
+						<p><b>Gatta Kusthi 2 (2026) HDRip [Telugu]</b></p>
+					</div>
+				
+				</li>
+				<li>
+					<div class="boxed film">
+						<div class="cont_display">
+							<a title="Police Complaint (2026) HDRip [Telugu]" href="./police-complaint-2026-hdrip-telugu-7270.html">
+								<img width="165" height="220" src="./uploads/Police-Complaint-Telugu.jpg" class="attachment-post-thumbnail size-post-thumbnail wp-post-image" alt="Police Complaint"></a>
+						</div>
+						<p><b>Police Complaint (2026) HDRip [Telugu]</b></p>
+					</div>
+				
+				</li>
+				<li>
+					<div class="boxed film">
+						<div class="cont_display">
+							<a title="Geetha Sakshiga (2026) HDRip [Telugu]" href="./geetha-sakshiga-2026-hdrip-telugu-7292.html">
+								<img width="165" height="220" src="./uploads/Geetha-Sakshiga-Telugu.jpg" class="attachment-post-thumbnail size-post-thumbnail wp-post-image" alt="Geetha Sakshiga"></a>
+						</div>
+						<p><b>Geetha Sakshiga (2026) HDRip [Telugu]</b></p>
+					</div>
+				
+				</li>
+				<li>
+					<div class="boxed film">
+						<div class="cont_display">
+							<a title="Love Oh Love (2026) HDRip [Telugu]" href="./love-oh-love-2026-hdrip-telugu-7262.html">
+								<img width="165" height="220" src="./uploads/Love-Oh-Love-Telugu.jpg" class="attachment-post-thumbnail size-post-thumbnail wp-post-image" alt="Love Oh Love"></a>
+						</div>
+						<p><b>Love Oh Love (2026) HDRip [Telugu]</b></p>
+					</div>
+				
+				</li>
+				<li>
+					<div class="boxed film">
+						<div class="cont_display">
+							<a title="Mahabali 1980’s (2026) HDRip [Telugu]" href="./mahabali-1980s-2026-hdrip-telugu-7287.html">
+								<img width="165" height="220" src="./uploads/Mahabali-1980s-Telugu.jpg" class="attachment-post-thumbnail size-post-thumbnail wp-post-image" alt="Mahabali 1980’s"></a>
+						</div>
+						<p><b>Mahabali 1980’s (2026) HDRip [Telugu]</b></p>
+					</div>
+				
+				</li>
+				<li>
+					<div class="boxed film">
+						<div class="cont_display">
+							<a title="Balan (2026) HDRip [Telugu]" href="./balan-2026-hdrip-telugu-7260.html">
+								<img width="165" height="220" src="./uploads/Balan-Telugu.jpg" class="attachment-post-thumbnail size-post-thumbnail wp-post-image" alt="Balan"></a>
+						</div>
+						<p><b>Balan (2026) HDRip [Telugu]</b></p>
+					</div>
+				
+				</li>
+				<li>
+					<div class="boxed film">
+						<div class="cont_display">
+							<a title="Uyir (2026) HDRip [Malayalam]" href="./uyir-2026-hdrip-malayalam-7278.html">
+								<img width="165" height="220" src="./uploads/Uyir-Malayalam.jpg" class="attachment-post-thumbnail size-post-thumbnail wp-post-image" alt="Uyir"></a>
+						</div>
+						<p><b>Uyir (2026) HDRip [Malayalam]</b></p>
+					</div>
+				
+				</li>
+					
+			</ul> 
+			<div class="clear"></div>
+		</div>
+	</div>
+	<div class="clear"></div> 
+	<div class="featured lastest">
+		<h2 class="line_table">Latest Movies</h2>
+		<div class="content home_style">
+			<div class="clear"></div>
+			<ul>
+			
+				<li>
+					<div class="boxed film">
+						<div class="cont_display">
+							<a title="The Last House (2026) HDRip [Telugu Dubbed]" href="./the-last-house-2026-hdrip-telugu-dubbed-7310.html">
+								<img width="165" height="220" src="./uploads/The-Last-House-Telugu.jpg" class="attachment-post-thumbnail size-post-thumbnail wp-post-image" alt="The Last House">                                        </a>
+						</div>
+						<p><b>The Last House (2026) HDRip [Telugu Dubbed]</b></p>
+					</div>
+				</li>
+			
+				<li>
+					<div class="boxed film">
+						<div class="cont_display">
+							<a title="Operation Safed Sagar Season 1 (2026) HDRip [Telugu]" href="./operation-safed-sagar-season-1-2026-hdrip-telugu-7309.html">
+								<img width="165" height="220" src="./uploads/Operation-Safed-Sagar-Season-1-Telugu.jpg" class="attachment-post-thumbnail size-post-thumbnail wp-post-image" alt="Operation Safed Sagar Season 1">                                        </a>
+						</div>
+						<p><b>Operation Safed Sagar Season 1 (2026) HDRip [Telugu]</b></p>
+					</div>
+				</li>
+			
+				<li>
+					<div class="boxed film">
+						<div class="cont_display">
+							<a title="Maggi Pusthaka (2026) HDRip [Kannada]" href="./maggi-pusthaka-2026-hdrip-kannada-7308.html">
+								<img width="165" height="220" src="./uploads/Maggi-Pusthaka-Kannada.jpg" class="attachment-post-thumbnail size-post-thumbnail wp-post-image" alt="Maggi Pusthaka">                                        </a>
+						</div>
+						<p><b>Maggi Pusthaka (2026) HDRip [Kannada]</b></p>
+					</div>
+				</li>
+			
+				<li>
+					<div class="boxed film">
+						<div class="cont_display">
+							<a title="Vanda Devullu (2026) HDRip [Telugu]" href="./vanda-devullu-2026-hdrip-telugu-7307.html">
+								<img width="165" height="220" src="./uploads/Vanda-Devullu-Telugu.jpg" class="attachment-post-thumbnail size-post-thumbnail wp-post-image" alt="Vanda Devullu">                                        </a>
+						</div>
+						<p><b>Vanda Devullu (2026) HDRip [Telugu]</b></p>
+					</div>
+				</li>
+			
+				<li>
+					<div class="boxed film">
+						<div class="cont_display">
+							<a title="Sathyathil Sambhavichathu (2026) HDRip [Malayalam]" href="./sathyathil-sambhavichathu-2026-hdrip-malayalam-7306.html">
+								<img width="165" height="220" src="./uploads/Sathyathil-Sambhavichathu-Malayalam.jpg" class="attachment-post-thumbnail size-post-thumbnail wp-post-image" alt="Sathyathil Sambhavichathu">                                        </a>
+						</div>
+						<p><b>Sathyathil Sambhavichathu (2026) HDRip [Malayalam]</b></p>
+					</div>
+				</li>
+			
+				<li>
+					<div class="boxed film">
+						<div class="cont_display">
+							<a title="The Super Mario Galaxy Movie (2026) BRRip [Telugu Dubbed]" href="./the-super-mario-galaxy-movie-2026-telugu-dubbed-7305.html">
+								<img width="165" height="220" src="./uploads/The-Super-Mario-Galaxy-Movie-Telugu.jpg" class="attachment-post-thumbnail size-post-thumbnail wp-post-image" alt="The Super Mario Galaxy Movie">                                        </a>
+						</div>
+						<p><b>The Super Mario Galaxy Movie (2026) BRRip [Telugu Dubbed]</b></p>
+					</div>
+				</li>
+			
+				<li>
+					<div class="boxed film">
+						<div class="cont_display">
+							<a title="M.R.P – Neekentha Naakentha (2026) HDRip [Telugu]" href="./mrp-neekentha-naakentha-2026-hdrip-telugu-7304.html">
+								<img width="165" height="220" src="./uploads/M.R.P-Neekentha-Naakentha-Telugu.jpg" class="attachment-post-thumbnail size-post-thumbnail wp-post-image" alt="M.R.P – Neekentha Naakentha">                                        </a>
+						</div>
+						<p><b>M.R.P – Neekentha Naakentha (2026) HDRip [Telugu]</b></p>
+					</div>
+				</li>
+			
+				<li>
+					<div class="boxed film">
+						<div class="cont_display">
+							<a title="Oh Sukumari (2026) HDRip [Malayalam]" href="./oh-sukumari-2026-hdrip-malayalam-7303.html">
+								<img width="165" height="220" src="./uploads/Oh-Sukumari-Malayalam.jpg" class="attachment-post-thumbnail size-post-thumbnail wp-post-image" alt="Oh Sukumari">                                        </a>
+						</div>
+						<p><b>Oh Sukumari (2026) HDRip [Malayalam]</b></p>
+					</div>
+				</li>
+			
+				<li>
+					<div class="boxed film">
+						<div class="cont_display">
+							<a title="Main Vaapas Aaunga (2026) HDRip [Hindi]" href="./main-vaapas-aaunga-2026-hdrip-hindi-7302.html">
+								<img width="165" height="220" src="./uploads/Main-Vaapas-Aaunga-Hindi.jpg" class="attachment-post-thumbnail size-post-thumbnail wp-post-image" alt="Main Vaapas Aaunga">                                        </a>
+						</div>
+						<p><b>Main Vaapas Aaunga (2026) HDRip [Hindi]</b></p>
+					</div>
+				</li>
+			
+				<li>
+					<div class="boxed film">
+						<div class="cont_display">
+							<a title="Idhayam Murali (2026) HDRip [Hindi]" href="./idhayam-murali-2026-hdrip-hindi-7301.html">
+								<img width="165" height="220" src="./uploads/Idhayam-Murali-Hindi.jpg" class="attachment-post-thumbnail size-post-thumbnail wp-post-image" alt="Idhayam Murali">                                        </a>
+						</div>
+						<p><b>Idhayam Murali (2026) HDRip [Hindi]</b></p>
+					</div>
+				</li>
+			
+				<li>
+					<div class="boxed film">
+						<div class="cont_display">
+							<a title="Vadhandhi Season 2 (2026) HDRip [Telugu]" href="./vadhandhi-season-2-2026-hdrip-telugu-7300.html">
+								<img width="165" height="220" src="./uploads/Vadhandhi-Season-2-Telugu.jpg" class="attachment-post-thumbnail size-post-thumbnail wp-post-image" alt="Vadhandhi Season 2">                                        </a>
+						</div>
+						<p><b>Vadhandhi Season 2 (2026) HDRip [Telugu]</b></p>
+					</div>
+				</li>
+			
+				<li>
+					<div class="boxed film">
+						<div class="cont_display">
+							<a title="Oh Sukumari (2026) HDRip [Tamil]" href="./oh-sukumari-2026-hdrip-tamil-7299.html">
+								<img width="165" height="220" src="./uploads/Oh-Sukumari-Tamil.jpg" class="attachment-post-thumbnail size-post-thumbnail wp-post-image" alt="Oh Sukumari">                                        </a>
+						</div>
+						<p><b>Oh Sukumari (2026) HDRip [Tamil]</b></p>
+					</div>
+				</li>
+				
+			</ul>
+			<nav id="posts-nav" class="paged-navigation contain">
+					<h1 class="assistive-text">Posts navigation</h1>
+					<div class="nav-newer"><a href="./movies/page/1">older -&gt;</a></div>
+					<!--<div class="nav-older"><a href="./movies/page/0">&lt;- older</a></div>
+					<div class="nav-newer"><a href="./movies/page/15">newer -&gt;</a></div>-->
+			</nav>
+			<div class="clear"></div>
+		</div>
+	</div>
 </div>
 
-<main>
+    </div> <!-- end #main -->
+<style>
+	.shortcode_homepage ul{
+		margin:0px;
+	}
+	.shortcode_homepage ul li{
+		margin: 0px;
+		width: calc(50% - 5px);
+		margin-right: 5px;
+		margin-left: 0px;
+		float:left;
+	}
+	.shortcode_homepage ul li:last-of-type{
+		margin-left: 5px;
+		margin-right: 0px;
+	}
+	.shortcode_homepage .boxed.film:after{
+		clear:both;
+		content: '';
+	}
+	.shortcode_homepage .boxed.film .cont_display{
+		float: left;
+		width: 50px;
+		height: 50px;
+	}
+	.shortcode_homepage .boxed.film{
+	    background-color: #202228;
+	    padding:5px;
+	}
+	.shortcode_homepage .boxed.film p{
+		width: calc(100% - 60px);
+		float:left;
+	    text-align: left;
+	    padding-left: 10px;
+	    padding-top: 10px;
+        margin-bottom: 0px!important;
+    	height: 35px;
+    	background-color: #111;
+    	    overflow: hidden;	
+	    padding-bottom: 5px;
+	}
+	.shortcode_homepage .movies_shortcode li img{
+	    width: 100%!important;
+	    padding: 0px;
+	    height: 100%!important;
+	}
+	.widget_movie_recent_post_widget ul li {
+		list-style: none!important;
+	    padding: 5px;
+	    margin: 2px 0px;
+	    
+	    border-bottom: 1px solid #202228;
+	}
+	.widget_movie_recent_post_widget h2{
+		padding: 5px 25px 5px;
+	}
+	.widget_movie_recent_post_widget {
+		padding:0px;
+	}
+	.shortcode_homepage ul li a:hover{
+		color: #d24d04;
+	}
+	.shortcode_homepage ul li a{
+		text-decoration: none;
+		color: #989eae;
+	}
+	.widget_movie_recent_post_widget ul li:before{
+		content: '';
+		display: inline-block;
+		height: 9px;
+	    width: 9px;
+	    margin-right: 5px;
+	    background: url('/images/right-arrow.png') no-repeat;
+	}
+	.button_homepage a:hover{
+		color: #fff!important;
+		background: #272a31!important;
+		text-decoration: none;
+	}
+	@media(max-width: 480px){
+		.shortcode_homepage ul li{
+			width: 100%;
+			margin:5px 0px;
+		}
+		.shortcode_homepage ul li:last-of-type{
+			margin:5px 0px;
+		}
+	}
+.year_btn{padding:3px 2px;margin:1px;border: 1px solid #444855;border-radius: 4px;float:left;}
+.tagc a{padding:3px 2px;margin:1px;border: 1px solid #444855;border-radius: 4px;float:left;}
+</style>
+    <ul id="sidebar" role="complementary">
 
-  <header class="hero">
-    <p class="eyebrow">Portfolio &mdash; 2026</p>
-    <h1>Your Name</h1>
-    <p class="hero-role">Product designer &amp; front-end developer</p>
-    <p class="hero-bio">
-      I design and build interfaces that feel considered from the first pixel
-      to the last line of code. Based in <span class="edit-me">[Your City]</span>,
-      working with teams who care about the details.
-    </p>
-    <div class="hero-links">
-      <a href="mailto:you@example.com">you@example.com</a>
-      <a href="https://github.com/yourhandle" target="_blank" rel="noopener">GitHub</a>
-      <a href="https://linkedin.com/in/yourhandle" target="_blank" rel="noopener">LinkedIn</a>
+<li class="widget widget_movie_recent_post_widget">
+<style>
+.side_table_trailer{width:100%;margin:-15px 0px 0px 0px;font-family: Verdana, Arial, sans-serif;padding:10px;color:#fff;background:#414243;}
+.side_table_trailer h3{margin:0px 0px 10px 0px;font-family: Verdana, Arial, sans-serif;font-size: 20px;color: white;}
+.side_table_trailer_item div.side_table_trailer_item_div{float:left;width:70%;background:#353535;padding:5px 10px 10px 0px;color:#fff;margin:0px 0px 3px 0px;}
+.side_table_trailer_item div.side_table_trailer_item_div_right{font-size: 8px;line-height:23px;float:right;width:23.2%;background:#353535;padding:5px 5px 6px 3px;color:#fff;margin:0px 0px 3px 0px;}
+.side_table_trailer_item div.side_table_trailer_item_div a{font-size: 14px;text-decoration:none;width:100%;font-family: Verdana, Arial, sans-serif;padding:10px 100% 10px 10px;color:#fff;margin:0px 0px 0px 0px;}
+.side_table_trailer_item div.side_table_trailer_item_div span{font-size: 8px;line-height:23px;}
+.side_table_trailer_item div.side_table_trailer_item_div a:hover{text-decoration:underline;}.year_btn{padding:3px 2px;margin:1px;border: 1px solid #444855;border-radius: 4px;float:left;}
+.tagc a{padding:5px 8px;margin:1px;border: 1px solid #444855;border-radius: 4px;float:left;}
+</style>
+		<h2 class="widget-title">Recent and Updated Movies</h2>
+	<ul>
+	    
+	
+			<li>
+			<a title="Maggi Pusthaka (2026) HDRip [Kannada]" href="./maggi-pusthaka-2026-hdrip-kannada-7308.html">Maggi Pusthaka (2026) HDRip [Kannada]</a>
+			</li>
+	
+			<li>
+			<a title="Sathyathil Sambhavichathu (2026) HDRip [Malayalam]" href="./sathyathil-sambhavichathu-2026-hdrip-malayalam-7306.html">Sathyathil Sambhavichathu (2026) HDRip [Malayalam]</a>
+			</li>
+	
+			<li>
+			<a title="Vanda Devullu (2026) HDRip [Telugu]" href="./vanda-devullu-2026-hdrip-telugu-7307.html">Vanda Devullu (2026) HDRip [Telugu]</a>
+			</li>
+	
+			<li>
+			<a title="The Last House (2026) HDRip [Telugu Dubbed]" href="./the-last-house-2026-hdrip-telugu-dubbed-7310.html">The Last House (2026) HDRip [Telugu Dubbed]</a>
+			</li>
+	
+			<li>
+			<a title="Operation Safed Sagar Season 1 (2026) HDRip [Telugu]" href="./operation-safed-sagar-season-1-2026-hdrip-telugu-7309.html">Operation Safed Sagar Season 1 (2026) HDRip [Telugu]</a>
+			</li>
+	
+			<li>
+			<a title="M.R.P – Neekentha Naakentha (2026) HDRip [Telugu]" href="./mrp-neekentha-naakentha-2026-hdrip-telugu-7304.html">M.R.P – Neekentha Naakentha (2026) HDRip [Telugu]</a>
+			</li>
+	
+			<li>
+			<a title="The Super Mario Galaxy Movie (2026) BRRip [Telugu Dubbed]" href="./the-super-mario-galaxy-movie-2026-telugu-dubbed-7305.html">The Super Mario Galaxy Movie (2026) BRRip [Telugu Dubbed]</a>
+			</li>
+	
+			<li>
+			<a title="Oh Sukumari (2026) HDRip [Malayalam]" href="./oh-sukumari-2026-hdrip-malayalam-7303.html">Oh Sukumari (2026) HDRip [Malayalam]</a>
+			</li>
+	
+			<li>
+			<a title="Main Vaapas Aaunga (2026) HDRip [Hindi]" href="./main-vaapas-aaunga-2026-hdrip-hindi-7302.html">Main Vaapas Aaunga (2026) HDRip [Hindi]</a>
+			</li>
+	
+			<li>
+			<a title="Idhayam Murali (2026) HDRip [Hindi]" href="./idhayam-murali-2026-hdrip-hindi-7301.html">Idhayam Murali (2026) HDRip [Hindi]</a>
+			</li>
+	
+			<li>
+			<a title="Oh Sukumari (2026) HDRip [Tamil]" href="./oh-sukumari-2026-hdrip-tamil-7299.html">Oh Sukumari (2026) HDRip [Tamil]</a>
+			</li>
+	
+			<li>
+			<a title="Idhayam Murali (2026) HDRip [Tamil]" href="./idhayam-murali-2026-hdrip-tamil-7298.html">Idhayam Murali (2026) HDRip [Tamil]</a>
+			</li>
+	
+			<li>
+			<a title="Dark Giant (2026) HDRip [Tamil]" href="./dark-giant-2026-hdrip-tamil-7297.html">Dark Giant (2026) HDRip [Tamil]</a>
+			</li>
+	
+			<li>
+			<a title="Oh Sukumari (2026) HDRip [Telugu]" href="./oh-sukumari-2026-hdrip-telugu-7295.html">Oh Sukumari (2026) HDRip [Telugu]</a>
+			</li>
+	
+			<li>
+			<a title="Hrudhayam Murali (2026) HDRip [Telugu]" href="./hrudhayam-murali-2026-hdrip-telugu-7296.html">Hrudhayam Murali (2026) HDRip [Telugu]</a>
+			</li>
+	
+			<li>
+			<a title="Vadhandhi Season 2 (2026) HDRip [Telugu]" href="./vadhandhi-season-2-2026-hdrip-telugu-7300.html">Vadhandhi Season 2 (2026) HDRip [Telugu]</a>
+			</li>
+	
+			<li>
+			<a title="Nooru Saami (2026) HDRip [Tamil]" href="./nooru-saami-2026-tamil-7294.html">Nooru Saami (2026) HDRip [Tamil]</a>
+			</li>
+	
+			<li>
+			<a title="Uyir (2026) HDRip [Tamil]" href="./uyir-2026-hdrip-tamil-7281.html">Uyir (2026) HDRip [Tamil]</a>
+			</li>
+	
+			<li>
+			<a title="Geetha Sakshiga (2026) HDRip [Telugu]" href="./geetha-sakshiga-2026-hdrip-telugu-7292.html">Geetha Sakshiga (2026) HDRip [Telugu]</a>
+			</li>
+	
+			<li>
+			<a title="Lenin (2026) HDRip [Telugu]" href="./lenin-2026-hdrip-telugu-7293.html">Lenin (2026) HDRip [Telugu]</a>
+			</li>
+				
+		</ul>
+</li>
+<li id="text-2" class="widget widget_text">
+    <div class="tagc">
+   <a class="year_btn" href="/year/2026"> <b>2026</b> </a>  <a class="year_btn" href="/year/2025"> <b>2025</b> </a>  <a class="year_btn" href="/year/2024"> <b>2024</b> </a>  <a class="year_btn" href="/year/2023"> <b>2023</b> </a>  <a class="year_btn" href="/year/2022"> <b>2022</b> </a>  <a class="year_btn" href="/year/2021"> <b>2021</b> </a>  <a class="year_btn" href="/year/2020"> <b>2020</b> </a>  <a class="year_btn" href="/year/2019"> <b>2019</b> </a>  <a class="year_btn" href="/year/2018"> <b>2018</b> </a>  <a class="year_btn" href="/year/2017"> <b>2017</b> </a>  <a class="year_btn" href="/year/2016"> <b>2016</b> </a>  <a class="year_btn" href="/year/2015"> <b>2015</b> </a>  <a class="year_btn" href="/year/2014"> <b>2014</b> </a>  <a class="year_btn" href="/year/2013"> <b>2013</b> </a>  <a class="year_btn" href="/year/2012"> <b>2012</b> </a>  <a class="year_btn" href="/year/2011"> <b>2011</b> </a>  <a class="year_btn" href="/year/2010"> <b>2010</b> </a>  <a class="year_btn" href="/year/2009"> <b>2009</b> </a>  <a class="year_btn" href="/year/2008"> <b>2008</b> </a>  <a class="year_btn" href="/year/2007"> <b>2007</b> </a>  <a class="year_btn" href="/year/2006"> <b>2006</b> </a>  <a class="year_btn" href="/year/2005"> <b>2005</b> </a>  <a class="year_btn" href="/year/2004"> <b>2004</b> </a>     </div>
+</li>
+<li id="text-3" class="widget widget_text">
+    <div class="tagc">
+	     <a href="./genre/action">Action</a><a href="./genre/adult">Adult</a><a href="./genre/adventure">Adventure</a><a href="./genre/animation">Animation</a><a href="./genre/biography">Biography</a><a href="./genre/comedy">Comedy</a><a href="./genre/crime">Crime</a><a href="./genre/dark">Dark</a><a href="./genre/documentary">Documentary</a><a href="./genre/drama">Drama</a><a href="./genre/erotic">Erotic</a><a href="./genre/family">Family</a><a href="./genre/fantasy">Fantasy</a><a href="./genre/game-show">Game-Show</a><a href="./genre/historical">Historical</a><a href="./genre/history">History</a><a href="./genre/horror">Horror</a><a href="./genre/music">Music</a><a href="./genre/musical">Musical</a><a href="./genre/mystery">Mystery</a><a href="./genre/news">News</a><a href="./genre/political">Political</a><a href="./genre/reality-tv">Reality-TV</a><a href="./genre/religious">Religious</a><a href="./genre/romance">Romance</a><a href="./genre/romantic">Romantic</a><a href="./genre/sci-fi">Sci-Fi</a><a href="./genre/social">Social</a><a href="./genre/sport">Sport</a><a href="./genre/suspense">Suspense</a><a href="./genre/talk-show">Talk-Show</a><a href="./genre/thriller">Thriller</a><a href="./genre/war">War</a><a href="./genre/western">Western</a>  
     </div>
-  </header>
+</li>
+</ul><!-- end sidebar --></div>
+ <!-- end #content -->
+</div><!-- end page-wrap -->
 
-  <hr class="rule">
+<div class="footer-wrapper">
+    <h2>About MovieRulz</h2>
+    <p>MovieRulz provides movie information including director details, cast lists, synopses and media updates for Telugu, Tamil, Malayalam and Hindi films. Our database helps users discover and learn about Indian cinema.</p>
 
-  <section class="work" aria-labelledby="work-heading">
-    <div class="section-meta">
-      <span class="section-num">2024 &mdash; 2026</span>
-      <h2 id="work-heading">Selected work</h2>
+    <hr>
+
+    <h2>Movie Categories</h2>
+    <p>Explore information on Telugu movies, Tamil movies, Malayalam movies and Hindi movies. Find director names, cast information, story summaries and latest media updates.</p>
+
+    <hr>
+
+    <h2>Latest Movie Updates</h2>
+    <p>MovieRulz is regularly updated with new movie information. Check back often for the latest Telugu, Tamil, Malayalam and Hindi film updates.</p>
+
+    <hr>
+
+    <h2>Contact & Support</h2>
+    <p>For questions or suggestions regarding MovieRulz movie database, please <a href="/contact">visit our contact page</a> or email us at <strong><a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="74391b021d112601180e3404061b001b1a19151d185a171b19">[email&#160;protected]</a></strong>.</p>
+</div>
+
+<footer id="colophon" role="contentinfo">
+    <div id="site-generator">
+        <p><strong>MovieRulz</strong> — Indian Movie Database</p>
+        <p style="font-size: 12px; color: #666; margin-top: 10px;">
+            MovieRulz provides informational content only including director details, cast lists, synopses and media updates for Telugu, Tamil, Malayalam and Hindi films.
+        </p>
+        <p style="font-size: 11px; color: #888; margin-top: 15px;">
+            <a href="/about" style="color: #888;">About</a> | 
+            <a href="/contact" style="color: #888;">Contact</a> | 
+            <a href="/privacy" style="color: #888;">Privacy Policy</a>
+        </p>
     </div>
-
-    <ul class="project-list">
-      <li class="project">
-        <div class="project-year">2026</div>
-        <div class="project-body">
-          <h3>Project One</h3>
-          <p>One sentence on what it is, who it's for, and the problem it solves.</p>
-          <div class="project-tags"><span>Design</span><span>React</span></div>
-        </div>
-        <a class="project-link" href="#" target="_blank" rel="noopener">View &rarr;</a>
-      </li>
-
-      <li class="project">
-        <div class="project-year">2025</div>
-        <div class="project-body">
-          <h3>Project Two</h3>
-          <p>One sentence on what it is, who it's for, and the problem it solves.</p>
-          <div class="project-tags"><span>Product</span><span>TypeScript</span></div>
-        </div>
-        <a class="project-link" href="#" target="_blank" rel="noopener">View &rarr;</a>
-      </li>
-
-      <li class="project">
-        <div class="project-year">2024</div>
-        <div class="project-body">
-          <h3>Project Three</h3>
-          <p>One sentence on what it is, who it's for, and the problem it solves.</p>
-          <div class="project-tags"><span>Branding</span><span>Web</span></div>
-        </div>
-        <a class="project-link" href="#" target="_blank" rel="noopener">View &rarr;</a>
-      </li>
-    </ul>
-  </section>
-
-  <hr class="rule">
-
-  <section class="about" aria-labelledby="about-heading">
-    <div class="section-meta">
-      <span class="section-num">About</span>
-      <h2 id="about-heading">A little more</h2>
-    </div>
-    <p class="about-text">
-      Write two or three sentences here about your background, what you care about
-      in your craft, and what kind of work you're looking for next. Keep it short —
-      this page should take less than a minute to read.
-    </p>
-  </section>
-
-  <footer class="site-footer">
-    <p>&copy; <span id="year"></span> Your Name. Built with plain HTML &amp; CSS.</p>
-  </footer>
-
-</main>
-
-<script src="script.js"></script>
+</footer>
+<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script id="aclib" type="text/javascript" src="//acscdn.com/script/aclib.js"></script>
+<script type="text/javascript">
+    aclib.runPop({
+        zoneId: '10474142',
+    });
+</script>
 </body>
+
 </html>
