@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://www.5movierulz.online/sitemap.xml
+Sitemap: https://www.5movierulzs.online/sitemap.xml
