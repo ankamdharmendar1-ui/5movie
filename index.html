@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Your Name — Portfolio</title>
+<meta name="description" content="Your Name. Designer & developer.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,300;9..144,500;9..144,600&family=Inter:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="status-bar" id="status-bar">
+  <span class="status-dot" aria-hidden="true"></span>
+  <span class="status-text">currently: <span id="status-msg">building something new</span></span>
+  <span class="cursor" aria-hidden="true"></span>
+</div>
+
+<main>
+
+  <header class="hero">
+    <p class="eyebrow">Portfolio &mdash; 2026</p>
+    <h1>Your Name</h1>
+    <p class="hero-role">Product designer &amp; front-end developer</p>
+    <p class="hero-bio">
+      I design and build interfaces that feel considered from the first pixel
+      to the last line of code. Based in <span class="edit-me">[Your City]</span>,
+      working with teams who care about the details.
+    </p>
+    <div class="hero-links">
+      <a href="mailto:you@example.com">you@example.com</a>
+      <a href="https://github.com/yourhandle" target="_blank" rel="noopener">GitHub</a>
+      <a href="https://linkedin.com/in/yourhandle" target="_blank" rel="noopener">LinkedIn</a>
+    </div>
+  </header>
+
+  <hr class="rule">
+
+  <section class="work" aria-labelledby="work-heading">
+    <div class="section-meta">
+      <span class="section-num">2024 &mdash; 2026</span>
+      <h2 id="work-heading">Selected work</h2>
+    </div>
+
+    <ul class="project-list">
+      <li class="project">
+        <div class="project-year">2026</div>
+        <div class="project-body">
+          <h3>Project One</h3>
+          <p>One sentence on what it is, who it's for, and the problem it solves.</p>
+          <div class="project-tags"><span>Design</span><span>React</span></div>
+        </div>
+        <a class="project-link" href="#" target="_blank" rel="noopener">View &rarr;</a>
+      </li>
+
+      <li class="project">
+        <div class="project-year">2025</div>
+        <div class="project-body">
+          <h3>Project Two</h3>
+          <p>One sentence on what it is, who it's for, and the problem it solves.</p>
+          <div class="project-tags"><span>Product</span><span>TypeScript</span></div>
+        </div>
+        <a class="project-link" href="#" target="_blank" rel="noopener">View &rarr;</a>
+      </li>
+
+      <li class="project">
+        <div class="project-year">2024</div>
+        <div class="project-body">
+          <h3>Project Three</h3>
+          <p>One sentence on what it is, who it's for, and the problem it solves.</p>
+          <div class="project-tags"><span>Branding</span><span>Web</span></div>
+        </div>
+        <a class="project-link" href="#" target="_blank" rel="noopener">View &rarr;</a>
+      </li>
+    </ul>
+  </section>
+
+  <hr class="rule">
+
+  <section class="about" aria-labelledby="about-heading">
+    <div class="section-meta">
+      <span class="section-num">About</span>
+      <h2 id="about-heading">A little more</h2>
+    </div>
+    <p class="about-text">
+      Write two or three sentences here about your background, what you care about
+      in your craft, and what kind of work you're looking for next. Keep it short —
+      this page should take less than a minute to read.
+    </p>
+  </section>
+
+  <footer class="site-footer">
+    <p>&copy; <span id="year"></span> Your Name. Built with plain HTML &amp; CSS.</p>
+  </footer>
+
+</main>
+
+<script src="script.js"></script>
+</body>
+</html>
